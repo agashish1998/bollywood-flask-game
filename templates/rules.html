@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %}
+        <h2>Rules</h2>
+        <ul>
+            <li>You have 9 tries to     guess the movie name.</li>
+            <li>All the vowels are displayed and you need to guess the consonents only.</li>
+            <li>You can give multiple inputs on the screen.</li>
+            <li>What is already guessed whether right or wrong cannot give you any penelty.</li>
+        </ul>
+        <h3>Continue playing?</h3>
+    <form action="/play" method="POST">
+        <input type="submit" value="YES">
+    </form>
+{% endblock %}  

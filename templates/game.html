@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<h1>{{ bollywood_string }}</h1>
+<h2>{% for a in movie_name %}
+        {{a}} &nbsp;
+    {% endfor %}
+</h2>
+<form action="/play" method="post">
+    <input name="user" autocomplete="off" autofocus placeholder="Your Guess" type="text"/>
+    <input type="submit" value="TRY" />
+</form>
+<br>
+
+
+<form action="/rules" >
+    <input type="submit"
+    
+    value="Rules"/>
+</form>
+
+{% endblock %}
