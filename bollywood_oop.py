@@ -24,7 +24,7 @@ class bollywood:
 		
 	def print_movie(self):
 		s = ""
-		print(self.guessed_letters)
+#		print(self.guessed_letters)
 		for a in self.movie_name:
 			if a == ' ':
 				s += ' '
@@ -50,13 +50,13 @@ class bollywood:
 		return x
 		
 	def reset(self):
-		print("resetting the game")
+#		print("resetting the game")
 		self.trials = max_trials
 		self.guessed_letters = ['A', 'E', 'I', 'O', 'U']
 		self.wrong_guessed_letters = ['A', 'E', 'I', 'O', 'U']	
 		self.pre_movie = self.movie_name
 		self.movie_name = random.choice(movies).upper()
-		print(self.guessed_letters, self.wrong_guessed_letters)
+#		print(self.guessed_letters, self.wrong_guessed_letters)
 		
 		
 	def input_handle(self, g):
